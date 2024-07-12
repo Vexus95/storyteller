@@ -5,7 +5,6 @@ from openai import OpenAI
 app = Flask(__name__)
 CORS(app)
 
-client = OpenAI(api_key="sk-proj-vRTvUjzr3aZXwZRhYBMvT3BlbkFJZW9yFMGhCbw5dNJKFNZQ")
 
 @app.route('/generate', methods=['POST'])
 def generate_text():
